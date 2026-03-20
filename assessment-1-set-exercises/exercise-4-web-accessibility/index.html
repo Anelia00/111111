@@ -19,70 +19,82 @@ Year: 2026
 <html lang="en">
 
 <head>
-    <!-- Page title displayed in the browser tab -->
+    <!-- Page title shown in the browser tab -->
     <title>The Wondering Photographer</title>
 
-    <!-- Link to the external CSS stylesheet -->
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Header containing the website logo/title and shopping cart link -->
+    <!-- Header with site title and basket link -->
     <header>
-        <!-- Website banner or divider image -->
-        <img src="TheDivider.png" alt="The Wondering Photographer">
+        <!-- Decorative divider image -->
+        <img src="TheDivider.png" alt="">
 
-        <!-- Link to the checkout page with shopping cart icon -->
-        <a href="checkout.html">
-            <img src="shopping.svg" alt="Shopping cart">
-        </a>
+        <!-- Site title and basket -->
+        <div class="header-row">
+            <p class="site-title">The Wondering Photographer</p>
+
+            <!-- Link to checkout page -->
+            <a href="checkout.html" class="cart-link">
+                <img src="shopping.svg" alt="Shopping basket" class="cart-icon">
+                <span class="cart-label">Basket</span>
+            </a>
+        </div>
     </header>
 
-    <!-- Main content area containing the photo gallery -->
-    <main>
+    <!-- Main gallery section -->
+    <main id="main-content">
+        <h1>Photo Gallery</h1>
 
-        <!-- Photo card displaying an image, description, and action button -->
-        <article>
-            <!-- Travel photograph -->
-            <img src="OceanPhoto.jpg" alt="View of the Greenland coast with icy cliffs and blue ocean">
+        <!-- Short introduction to the gallery -->
+        <p class="gallery-intro">
+            Browse the collection and add your favourites to your basket.
+        </p>
 
-            <!-- Description of the photograph -->
-            <p>This was from a fabulous trip to the cost of Greenland with my family. The water was lovely- but very
-                cold!</p>
+        <!-- Grid containing all photos -->
+        <div class="photo-grid">
 
-            <!-- Button to add the photo to the shopping basket -->
-            <button type="button">Add to basket</button>
-        </article>
+            <!-- Photo 1 -->
+            <article>
+                <img src="OceanPhoto.jpg" alt="People sitting on white cliffs overlooking the sea at sunset">
+                <p>Watching the sunset from the white cliffs — the sky was full of the most beautiful colours.</p>
+                <button type="button">Add to basket</button>
+            </article>
 
-        <!-- Second photo card -->
-        <article>
-            <img src="BridgePhoto.jpg" alt="Looking up at the red towers of the Golden Gate Bridge against a blue sky">
-            <p>A picture of the Golden Gate Bridge. New York! New York!</p>
-            <button type="button">Add to basket</button>
-        </article>
+            <!-- Photo 2 -->
+            <article>
+                <img src="BridgePhoto.jpg" alt="Looking up at the Golden Gate Bridge in San Francisco">
+                <p>Looking up at the Golden Gate Bridge in San Francisco — you don’t realise how massive it is until
+                    you’re underneath it.</p>
+                <button type="button">Add to basket</button>
+            </article>
 
-        <!-- Third photo card -->
-        <article>
-            <img src="ValleyPhoto.jpg" alt="A wide glacial river valley in Greenland with mountains and a fjord">
-            <p>Another great photo from Greenland. It's a river valley where a glacier used to be.</p>
-            <button type="button">Add to basket</button>
-        </article>
+            <!-- Photo 3 -->
+            <article>
+                <img src="ValleyPhoto.jpg" alt="A Norwegian fjord surrounded by mountains">
+                <p>Watching over a Norwegian fjord from the edge of a cliff — it really puts everything into
+                    perspective.</p>
+                <button type="button">Add to basket</button>
+            </article>
 
-        <!-- Fourth photo card -->
-        <article>
-            <img src="WaterfallPhoto.jpg" alt="A tall waterfall cascading down mossy green cliffs into a blue pool">
-            <p>The waterfall made such a lovely sound. I could have fallen asleep!</p>
-            <button type="button">Add to basket</button>
-        </article>
+            <!-- Photo 4 -->
+            <article>
+                <img src="WaterfallPhoto.jpg" alt="A waterfall flowing into a pool surrounded by green rocks">
+                <p>The waterfall made such a lovely sound. I could have fallen asleep!</p>
+                <button type="button">Add to basket</button>
+            </article>
+
+        </div>
 
     </main>
 
-    <!-- Footer containing copyright information and navigation links -->
+    <!-- Footer with copyright and links -->
     <footer>
         <p>Copyright The Wondering Photographer 2018.</p>
 
-        <!-- Footer navigation links -->
+        <!-- Navigation links -->
         <nav>
             <a href="index.html">Home</a>
             <a href="blog.html">Blog</a>
